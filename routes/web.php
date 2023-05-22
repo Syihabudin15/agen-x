@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ConcerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,18 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('main');
-});
+Route::get('/', [ConcerController::class, 'index']);
 
 Route::get('/masuk', function () {
     return view('login');
 });
 
-Route::get('/daftar-konser', function () {
-    return view('listConcer');
-});
+Route::get('/daftar-konser', [ConcerController::class, 'all']);
 
 Route::get('/admin-dashboard', function () {
     return view('adminDashboard');
+});
+
+Route::get('/beli', function () {
+    return view('beliTiket');
 });
