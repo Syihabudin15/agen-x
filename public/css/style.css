@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 0;
+    background-color: black;
+    color: #fff;
+}
+.agen-x{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+}
+nav ul li{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li:hover{
+    color: #969696;
+    text-decoration: underline;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+.right-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main-top{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.main-top .main-left{
+    width: 50%;
+}
+.main-top .main-left .main-button{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.main-top .main-left .main-button button{
+    padding: 5px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(0, 253, 0);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border-color: #969696;
+}
+.main-top .main-left .main-button button:hover{
+    transform: scale(1.1);
+}
+.main-top .main-right{
+    width: 30%;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px #aaa;
+    height: 300px;
+}
+.list-concer-wrapper{
+    margin: 100px auto;
+}
+.list-concer-wrapper h3{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 50px;
+}
+.list-concer{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card-concer{
+    width: 250px;
+    height: 300px;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-shadow: 2px 2px 2px #aaa;
+}
+.card-concer .img-concer{
+    border: 1px solid #aaa;
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+}
+.card-concer h4{
+    margin-bottom: -8px;
+}
+.card-desc{
+    height: 70px;
+    overflow-y: auto;
+}
+.button-buy{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.button-buy button{
+    background-color: rgb(0, 0, 131);
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.see-all-link{
+    text-align: right;
+    margin-right: 5vw;
+    font-style: italic;
+}
+.auth-wrapper{
+    width: 50%;
+    margin: 50px auto;
+    border:  1px solid #eee;
+    padding: 20px;
+    box-shadow: 2px 2px 2px #eee;
+}
+.auth-wrapper h2{
+    text-align: center;
+}
+.form-wrapper{
+    width: 80%;
+    margin: 50px auto;
+}
+.label-input{
+    margin: 20px 20px;
+    word-spacing: 20px;
+}
+.label-input input{
+    height: 25px;
+    width: 80%;
+    border-radius: 5px;
+}
+.remember span{
+    margin-left: 20px;
+}
+.button-form{
+    display: flex;
+    justify-content: center;
+}
+.button-form button{
+    padding: 5px 20%;
+    margin-top: 50px;
+}
+.register-link{
+    text-align: right;
+}
+.register-link a{
+    margin-left: 20px;
+    font-style: italic;
+}
+.title-list-concer{
+    text-align: center;
+    margin: 50px auto;
+    text-shadow: 2px 2px 2px #aaa;
+    text-decoration: underline;
+}
+.pagination{
+    margin: 100px auto;
+}
+.pagination ul{
+    display: flex;
+    justify-content: center;
+}
+.pagination ul li{
+    list-style: none;
+    margin: 5px;
+    padding: 4px 8px;
+    border: 1px solid #aaa;
+    cursor: pointer;
+}
+.pagination ul li:hover{
+    font-weight: bold;
+}
+.dashboard{
+    margin: 50px;
+    border: 1px solid #aaa;
+}
+.find-tiket{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background-color: #eee;
+}
+.find-tiket input{
+    height: 20px;
+}
+.find-tiket button{
+    padding: 4px 10px;
+    cursor: pointer;
+    background-color: rgb(88, 88, 248);
+    border-radius: 5px;
+}
+.data-tiket{
+    width: 50%;
+}
+.row-data-tiket{
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px;
+}
+.list-pemesan{
+    width: 100vw;
+    padding: 10px;
+    margin: 100px 0;
+    box-sizing: border-box;
+}
+.filter{
+    margin: 10px;
+}
+.table{
+    width: 100%;
+    overflow-x: auto;
+}
+tr, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+@media only screen and (max-width: 600px) {
+    .agen-x{
+        font-size: 1.1em;
+    }
+    .main-top .main-left{
+        width: 80%;
+    }
+    .main-top .main-right{
+        width: 80%;
+        height: 200px;
+    }
+    .auth-wrapper{
+        width: 90%;
+    }
+    .find-tiket{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .data-tiket{
+        width: 100%;
+    }
+}
